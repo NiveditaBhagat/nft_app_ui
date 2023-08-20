@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+
+
 class MyAppBar extends StatelessWidget {
   final String title;
   VoidCallback ontap;
@@ -18,9 +20,10 @@ class MyAppBar extends StatelessWidget {
           Expanded(
             child: Text(
               title,
-              style: TextStyle(
-                fontSize: 40,
-              ),
+            style: TextStyle(
+              fontFamily: 'BebasNeue-Regular',
+              fontSize: 54,
+            )
             )
           ),
           GestureDetector(

@@ -9,12 +9,23 @@ class MyTabBar extends StatelessWidget {
     return Column(
       children: [
         TabBar(
+          indicatorColor: Colors.black,
+        
           unselectedLabelColor: Colors.grey,
           labelColor: Colors.black,
           tabs: [
-            Text(tabOptions[0][0]),
-            Text(tabOptions[1][0]),
-            Text(tabOptions[2][0]),
+            Padding(
+              padding: const EdgeInsets.only(bottom:8.0,left: 15,),
+              child: Text(tabOptions[0][0]),
+            ),
+            Padding(
+              padding: const EdgeInsets.all(8.0),
+              child: Text(tabOptions[1][0]),
+            ),
+            Padding(
+              padding: const EdgeInsets.only(bottom: 8.0, right: 15),
+              child: Text(tabOptions[2][0]),
+            ),
           ]
           ),
            Expanded(
